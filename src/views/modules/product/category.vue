@@ -6,7 +6,7 @@
       :props="defaultProps"
       :expand-on-click-node="false"
       :showCheckbox=true
-      node-key="catId"
+      node-key="catId" 
       :default-expanded-keys="expandedKey"
     >
       <span class="custom-tree-node" slot-scope="{ node, data }">
