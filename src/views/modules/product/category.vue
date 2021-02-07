@@ -5,8 +5,7 @@
     <el-button v-if="draggable" type="primary" @click="batchSave">batch save</el-button>
     <el-button type="primary" @click="batchDelete">batch delete</el-button>
     <el-tree @node-drop="handleDrop" :draggable="draggable" :allow-drop="allowDrop" :data="menus" :props="defaultProps" :expand-on-click-node="false" :showCheckbox=true node-key="catId"
-      :default-expanded-keys="expandedKey"
-      ref="menuTree">
+      :default-expanded-keys="expandedKey" ref="menuTree">
       <span class="custom-tree-node" slot-scope="{ node, data }">
         <span>{{ node.label }}</span>
         <span>
